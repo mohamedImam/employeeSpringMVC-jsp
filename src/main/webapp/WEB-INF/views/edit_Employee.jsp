@@ -1,8 +1,14 @@
 
 <section class="top-inner">
     <div class="container">
- 
+     <li> <a href="${pageContext.request.contextPath}/">home</a> </li>
+         <br>
+         <li> <a href="${pageContext.request.contextPath}/employeeList">back to Employee list</a> </li>
+         <br>
+ <center>
         <form action="${pageContext.request.contextPath}/editsave" method="post" modelAttribute="employee">
+        
+       
             <table border="0" cellpadding="5">
                 <tr>
                     <td>ID: </td>
@@ -47,7 +53,7 @@
                 </tr>                    
             </table>
         </form>
-    
+    </center>
   </div><!-- /.container -->
     
 </section>

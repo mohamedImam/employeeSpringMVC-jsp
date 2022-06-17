@@ -2,7 +2,12 @@
    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>    
   <body>
 <h1>Employees List</h1>  
-<table border="2" width="70%" cellpadding="2">  
+    <div id="header">
+        <tiles:insertAttribute name="header" /> <!-- (4) -->
+    </div>
+   <li>  <a href="${pageContext.request.contextPath}/">home</a> </li>
+   <br> 
+<table border="0" width="70%" cellpadding="2">  
 <tr><th>id</th><th>firstname</th><th>lastname</th><th>dob</th><th>dept</th><th>Salary</th><th>manager</th><th>Edit</th><th>Delete</th></tr>  
    <c:forEach var="emp" items="${list}">   
    <tr>  
@@ -18,6 +23,8 @@
    </tr>  
    </c:forEach>  
    </table>  
-   <br/>  
-   <a href="${pageContext.request.contextPath}/">home</a>  
+   <br/>
+   </body>
+   <body>
+   
    </body>
